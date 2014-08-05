@@ -44,7 +44,7 @@ $app->get('/teas/:id', function ($id) {
                 echo '{"error":{"text":' . $e->getMessage() . '}}';
             }
         });
-//search by name - didn't try to make this work
+//search by name - doesn't work
 $app->get('/teas/search/:query', function ($query) {
             $sql = "SELECT * FROM tea ORDER BY name WHERE name LIKE :query";
             try {
@@ -130,16 +130,11 @@ $app->run();
 
 function getConnection() {
     //home localhost conn. details
-/*    $dbhost = "127.0.0.1";
+    $dbhost = "127.0.0.1";
     $dbuser = "root";
     $dbpass = "";
     $dbname = "teashop";
-    */
-      //iadt avaya conn. details
-      $dbhost = "daneel";
-      $dbuser = "N00114504";
-      $dbpass = "N00114504";
-      $dbname = "N00114504"; 
+
     $dbh = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $dbh;
