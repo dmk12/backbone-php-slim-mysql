@@ -15,3 +15,5 @@ In the `getConnection()` in `api/index.php` change the connection details to mat
 
 Access the app through a browser by pointing to the web server's URL, for example:
 `http://localhost[:yourportnum]/your/folder/path`.
+
+You should see a table with data and be able to perform CRUD operations - add, edit and delete entries.
