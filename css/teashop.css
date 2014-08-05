@@ -1,0 +1,20 @@
+th{
+    text-align: left;
+}
+td{
+    padding: 5px;
+}
+div#tea-details {
+    background: #eee;
+    display: inline-block;
+}
+.form-left-col {
+    padding: 20px;
+}
+div#tea-list {
+    float: left;
+    margin-right: 40px;
+}
+footer {
+    clear: both;
+}
