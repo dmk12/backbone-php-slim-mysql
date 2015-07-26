@@ -7,7 +7,7 @@ Run a MySQL database management tool and webserver of your choice (if working lo
 
 In the `getConnection()` in `api/index.php` change the connection details to match your host, user, password and database name. The default is:
 
-	$dbhost = "127.0.0.1";//same as "localhost"
+	$dbhost = "127.0.0.1";
 	$dbuser = "root";
 	$dbpass = "";
 	$dbname = "teashop";
